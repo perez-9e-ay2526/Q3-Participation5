@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Modified Calculator </title>
+
+    <link rel="stylesheet" href="styles.css">
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+
+</head>
+<body>
+
+</head>
+<body>
+
+    <div class="container mt-5 p-5">
+        <h1>Sum of Two Variables</h1>
+        <p id="Calc_Ans"></p>
+
+        <form>
+            <label>First Number:</label><br>
+            <input type="number" id="First_Num">
+            <br><br>
+
+            <label>Second Number:</label><br>
+            <input type="number" id="Sec_Num">
+            <br><br>
+
+            <button type="button" class="btn btn-primary" onclick="sum()">Calculate!</button>
+            <button type="button" class="btn btn-primary" onclick="window.location.reload()">Reload Page</button>
+
+        </form>
+    </div>
+
+    <script>
+        function sum(){
+            let var1=document.getElementById("First_Num").value;
+            let var2=document.getElementById("Sec_Num").value;
+            let result=Number(var1) + Number(var2);
+
+            documnet.getElementById("Calc_Ans").innerHTML="The sum equals to:"+result;
+        }
+
+    </script>
+    
+</body>
+</html>
